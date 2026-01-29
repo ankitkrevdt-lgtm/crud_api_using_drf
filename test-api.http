@@ -1,0 +1,23 @@
+### 1. REGISTER USER
+POST http://127.0.0.1:8000/api/auth/register/
+Content-Type: application/json
+
+{
+  "username": "testuser",
+  "email": "test@example.com",
+  "password": "pass123",
+  "password2": "pass123"
+}
+
+###
+
+### 2. LOGIN
+POST http://127.0.0.1:8000/api/auth/login/
+Content-Type: application/json
+
+{
+  "username": "testuser",
+  "password": "pass123"
+}
+
+###
